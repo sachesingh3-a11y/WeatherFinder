@@ -36,7 +36,7 @@ Aplikasi pencarian informasi cuaca real-time yang dibangun menggunakan **React N
   - Geocoding: `https://geocoding-api.open-meteo.com/v1/search`
   - Forecast: `https://api.open-meteo.com/v1/forecast`
 
-🔗 **Link Expo Snack**: [Isi dengan Link Snack setelah kamu paste kodenya di snack.expo.dev]
+🔗 **Link Expo Snack**: [(https://snack.expo.dev/@sache/smelly-red-milkshake))]
 
 ---
 
@@ -44,6 +44,21 @@ Aplikasi pencarian informasi cuaca real-time yang dibangun menggunakan **React N
 
 1. **Clone Repositori Ini**
    ```bash
-   git clone [https://github.com/USERNAME_KAMU/NAMA_REPO_KAMU.git](https://github.com/USERNAME_KAMU/NAMA_REPO_KAMU.git)
-   cd NAMA_REPO_KAMU
+   git clone [)]
    ```
+<img width="1080" height="2372" alt="kosong" src="https://github.com/user-attachments/assets/c7c31300-78bc-4259-983e-7e642fa468d5" />
+
+
+
+<img width="728" height="1600" alt="loading" src="https://github.com/user-attachments/assets/3f9d6489-748c-40e0-86c2-eccdabf0b0aa" />
+
+
+
+<img width="728" height="1600" alt="sukses" src="https://github.com/user-attachments/assets/9b0d881b-3ebb-484d-8489-670eeba52461" />
+
+
+
+<img width="1080" height="2372" alt="erorr" src="https://github.com/user-attachments/assets/0a9ad1dd-6bff-4f7d-853c-4538267e8381" />
+
+
+

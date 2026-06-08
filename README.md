@@ -1,56 +1,49 @@
-# Welcome to your Expo app 👋
+# ⛅ WeatherFinder Upgrade - React Native Expo
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Aplikasi pencarian informasi cuaca real-time yang dibangun menggunakan **React Native**, **Expo SDK**, dan integrasi **Open-Meteo API** tanpa menggunakan API Key. Proyek ini mendemonstrasikan implementasi React hooks (`useEffect`, `useState`), optimasi jaringan menggunakan _Debounce technique_, penanganan siklus pembatalan _Asynchronous fetch request_ (`AbortController`), serta UI/UX bernuansa gelap premium (_dark luxury aesthetic_).
 
-## Get started
+---
 
-1. Install dependencies
+## 🎯 Daftar Fitur
 
+### 🟢 Level 1 — Fitur Wajib (Core)
+
+- **Controlled TextInput**: Manajemen input pencarian nama kota yang sinkron dengan state aplikasi.
+- **Debounce Mechanism (500ms)**: Menunda eksekusi fetch data hingga user berhenti mengetik selama 500ms untuk menghemat kuota request API.
+- **2-Step Sequential Fetch**: Melakukan pencarian koordinat lokasi terlebih dahulu melalui _Geocoding API_, dilanjutkan dengan pencarian data cuaca spesifik lewat _Forecast API_.
+- **4 Kondisi State UI**: Penanganan tampilan yang adaptif saat kondisi **Kosong (Hint)**, **Loading (Spinner)**, **Error (Pesan Masalah)**, dan **Sukses (Kartu Informasi)**.
+- **Cleanup AbortController**: Membatalkan request lama yang masih _pending_ jika pengguna mengetik huruf baru dengan cepat untuk menghindari fenomena _race condition_.
+- **WMO Weather Code Mapping**: Translasi kode cuaca numerik bawaan Open-Meteo ke dalam teks deskripsi bahasa Indonesia dan emoji yang relevan.
+
+### 🟡 Level 2 — Fitur Pengembangan (Dipilih)
+
+- [x] **🧭 Arah & Kecepatan Angin**: Menampilkan kecepatan angin aktual dalam satuan `km/h` serta merubah besaran derajat (`°`) menjadi penanda mata angin tekstual (U, TL, T, TG, S, BD, B, BL).
+- [x] **🌙 Indikator Siang/Malam**: Memanfaatkan variabel data `is_day` (0 atau 1) untuk memberikan identitas visual kartu cuaca yang presisi sesuai status waktu di lokasi target.
+- [x] **🔄 Tombol Refresh**: Tombol "Perbarui Data" yang memungkinkan penarikan data ulang (re-fetch) secara instan tanpa perlu mengetik ulang nama kota.
+
+### 🔴 Level 3 — Tantangan Bonus (Opsional)
+
+- [x] **Smooth Animation**: Menggunakan `Animated.timing` API untuk memberikan efek transisi halus _fade-in_ (opasitas dari `0` ke `1`) sesaat setelah data cuaca sukses dimuat ke layar.
+
+---
+
+## 🛠️ Tech Stack & API
+
+- **Framework**: React Native (Expo Go Framework)
+- **Bahasa**: TypeScript / JavaScript
+- **Style Engine**: React Native StyleSheet (Premium Dark Palette with Gold Accents)
+- **API Engine**:
+  - Geocoding: `https://geocoding-api.open-meteo.com/v1/search`
+  - Forecast: `https://api.open-meteo.com/v1/forecast`
+
+🔗 **Link Expo Snack**: [Isi dengan Link Snack setelah kamu paste kodenya di snack.expo.dev]
+
+---
+
+## 🚀 Panduan Menjalankan Proyek (Setup Instructions)
+
+1. **Clone Repositori Ini**
    ```bash
-   npm install
+   git clone [https://github.com/USERNAME_KAMU/NAMA_REPO_KAMU.git](https://github.com/USERNAME_KAMU/NAMA_REPO_KAMU.git)
+   cd NAMA_REPO_KAMU
    ```
-
-2. Start the app
-
-   ```bash
-   npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-### Other setup steps
-
-- To set up ESLint for linting, run `npx expo lint`, or follow our guide on ["Using ESLint and Prettier"](https://docs.expo.dev/guides/using-eslint/)
-- If you'd like to set up unit testing, follow our guide on ["Unit Testing with Jest"](https://docs.expo.dev/develop/unit-testing/)
-- Learn more about the TypeScript setup in this template in our guide on ["Using TypeScript"](https://docs.expo.dev/guides/typescript/)
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.

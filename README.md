@@ -48,7 +48,21 @@ Aplikasi pencarian informasi cuaca real-time yang dibangun menggunakan **React N
    ```
 
 
-   kososng
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   kosong
 <img width="1080" height="2372" alt="kosong" src="https://github.com/user-attachments/assets/c7c31300-78bc-4259-983e-7e642fa468d5" />
 
 

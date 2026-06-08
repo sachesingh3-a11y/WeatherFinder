@@ -46,18 +46,34 @@ Aplikasi pencarian informasi cuaca real-time yang dibangun menggunakan **React N
    ```bash
    git clone [)]
    ```
+
+
+   kososng
 <img width="1080" height="2372" alt="kosong" src="https://github.com/user-attachments/assets/c7c31300-78bc-4259-983e-7e642fa468d5" />
 
 
 
+
+
+
+loading
 <img width="728" height="1600" alt="loading" src="https://github.com/user-attachments/assets/3f9d6489-748c-40e0-86c2-eccdabf0b0aa" />
 
 
 
+
+
+
+sukses
 <img width="728" height="1600" alt="sukses" src="https://github.com/user-attachments/assets/9b0d881b-3ebb-484d-8489-670eeba52461" />
 
 
 
+
+
+
+
+erorr
 <img width="1080" height="2372" alt="erorr" src="https://github.com/user-attachments/assets/0a9ad1dd-6bff-4f7d-853c-4538267e8381" />
 
 
